@@ -2,11 +2,11 @@
 using namespace std;
 /*
 H-3
-ç”¨é€’å½’å’Œé€’æ¨å®ç°æ–æ³¢é‚£å¥‘æ•°åˆ—
+µİ¹éÓëµİÍÆÊµÏÖì³²¨ÄÇÆõÊıÁĞ
 f(n)=f(n-1)+f(n-2);
-å¹¶å¯¹é€’æ¨å®ç°çš„è¿›è¡Œæ—¶é—´å¤æ‚åº¦åˆ†æ
+
 */
-/*int Fibonacci(int n){
+int Fibonacci(int n){
     if(n<0){
         return 0;
     }
@@ -20,16 +20,16 @@ f(n)=f(n-1)+f(n-2);
 }
 int main(){
     int i,l;
-    cout<<"è¾“å‡ºä¸ªæ•°: "<<endl;
+    cout<<"Êä³ö¸öÊı: "<<endl;
     cin>>l;
-    for( i=0;i<l;++i){
+    for( i=1;i<=l;++i){
         cout<<Fibonacci(i)<<" ";
     }
     return 0;
-}*/
+}
 
-//é€’æ¨è§£å†³
-int Fibonacci(int n){ 
+//µİÍÆÊµÏÖ
+/*int Fibonacci(int n){ 
     if(n<0){
         return 0;
     }
@@ -49,9 +49,13 @@ int Fibonacci(int n){
 }
 int main(){
     //int n;
-    //cout<<"è¾“å‡ºä¸ªæ•°: "<<endl;
+    //cout<<"Êä³ö¸öÊı: "<<endl;
     //cin>>n;
-    cout<<Fibonacci(10)<<endl;
-}
-//æ—¶é—´å¤æ‚åº¦ä¸ºO(n);
-//iå¾ªç¯næ¬¡ç»“æŸ
+    cout<<Fibonacci(8)<<endl;
+}*/
+//Ê±¼ä¸´ÔÓ¶ÈO(2^n)
+/*
+¼ÙÉèn=4£¬¾ÍÓĞf(4)=f(3)+f(3),3ÓÖ¿ÉÒÔ·Ö³Éf(2)+f(1);
+¾ÍÓĞ2^0+2^1+...×îºóÈ¡¹ØÏµ×î´óµÄ2^n
+*/
+//¿Õ¼ä¸´ÔÓ¶ÈO(n)

@@ -41,5 +41,6 @@ int main(){
     cout << Stairs(n)<<endl;
     return 0;
 }
-//时间复杂度O(n)
+//时间复杂度O(n)-当n=1/=2只有O(1),其他大于n>1时,都是循环了n次
+//空间复杂度O(n)
 //i循环到n次结束
